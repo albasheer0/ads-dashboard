@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <FiltersPanel></FiltersPanel>
+  <HeaderNav ></HeaderNav>
+    <v-main>
+<VisualizationArea></VisualizationArea>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+
+import HeaderNav from './components/header-nav.vue';
+import FiltersPanel from './components/FiltersPanel.vue';
+import VisualizationArea from './components/charts/VisualizationArea.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    HeaderNav,
+    VisualizationArea,
+    FiltersPanel,
   },
+
+  data: () => ({
+    //
+  }),
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
