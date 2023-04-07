@@ -20,7 +20,7 @@
 
       <v-divider></v-divider>
 
-        <v-row  class="mx-3">
+        <v-row  class="mx-3 mt-1">
 <v-col cols="12">
  <v-menu
           ref="menu"
